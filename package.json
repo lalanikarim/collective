@@ -1,0 +1,25 @@
+{
+  "name": "collective",
+  "version": "0.1.0",
+  "description": "The Collective app on the engram kernel: a fleet of project brains with a shared board — members, jobs, channels, knowledge, remote members (M2 transport + M2.2 board RPC).",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "start": "node src/main.ts",
+    "test": "node test/board.test.ts && node test/board-live.test.ts && node test/board-comms-live.test.ts && node test/board-memory-live.test.ts && node test/board-trust-live.test.ts && node test/board-approval-live.test.ts && node test/board-team-live.test.ts && node test/board-remote.test.ts && node test/board-remote-live.test.ts && node test/board-federation-live.test.ts"
+  },
+  "dependencies": {
+    "@earendil-works/chord": "1.3.0",
+    "@earendil-works/pi-ai": "1.3.0",
+    "@earendil-works/pi-durable": "1.3.0",
+    "engram": "github:lalanikarim/engram#refactor/extract-collective"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
