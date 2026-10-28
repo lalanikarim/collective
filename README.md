@@ -1,7 +1,8 @@
 # collective — a fleet of project brains on the engram kernel
 
 The flagship app on **[engram](https://github.com/lalanikarim/engram)** (pinned as an npm
-dependency, composed via `createCoreInstance()`): a durable, local-model **shared board** —
+dependency at the kernel tag — currently `v0.1.0` — composed via `createCoreInstance()`):
+a durable, local-model **shared board** —
 a standing team of named members (each with its own workspace, model, and domain memory)
 coordinated by the root conversation, plus **remote members** living on other engram
 instances.
@@ -19,7 +20,7 @@ Ecosystem framing (kernel vs. apps, solo/collective/society flows): engram's
 
 ```bash
 cp .env.example .env      # set OPENAI_BASE_URL, OPENAI_API_KEY, API_TOKEN
-npm install               # installs engram from git (its prepare step compiles dist/)
+npm install               # installs engram@v0.1.0 from git (its prepare step compiles dist/)
 npm start                 # node src/main.ts
 ```
 
